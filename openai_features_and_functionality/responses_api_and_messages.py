@@ -21,20 +21,20 @@ history = [
 # Create a response using the conversation history
 response = client.responses.create(
     model=MODEL,
-    input=history,
-    store=False #we are not storing the conversation automatically
+    input="tell me a joke"
+    #store=False #we are not storing the conversation automatically
 )
 
 print("Joke", response.output_text)
 
-history += [{"role": el.role, "content": el.content} for el in response.output]
+#history += [{"role": el.role, "content": el.content} for el in response.output]
 
-history.append({"role": "user", "content": "tell me another"})
+#history.append({"role": "user", "content": "tell me another"})
 
 second_response = client.responses.create(
     model=MODEL,
-    input=history,
-    store = False
+    previous_response_id=response.id,
+    input=[{"role": "user", "content": "explain why this is funny."}]
 )
 
-print("Another joke:", second_response.output_text)
+print("Explanation:", second_response.output_text)
