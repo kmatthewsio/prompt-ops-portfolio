@@ -12,12 +12,13 @@ def add_assistant_messages(messages, text):
     assistant_message = {"role": "user", "content": text}
     messages.append(assistant_message)
 
-def chat(messages, system=None):
+def chat(messages, system=None, tempature=1.0):
     params = {
         "model": model,
         "max_tokens": 1000,
         "messages": messages,
-        "system": system
+        "system": system,
+        "tempature": tempature
     }
 
     if system:
