@@ -1,0 +1,11 @@
+[
+  {
+    "task": "Write a Python function that takes an S3 bucket name and object key as parameters and returns the complete S3 URI in the format 's3://bucket-name/object-key'. The function should validate that the bucket name contains only lowercase letters, numbers, periods, and hyphens."
+  },
+  {
+    "task": "Create a JSON object representing an AWS IAM policy that grants read-only access to a specific S3 bucket named 'company-logs-bucket'. The policy should allow the actions 's3:GetObject' and 's3:ListBucket' only for resources within that bucket."
+  },
+  {
+    "task": "Write a regular expression that validates AWS Lambda function names according to AWS naming requirements: must be 1-64 characters long, can contain letters, numbers, hyphens, and underscores, but cannot start or end with a hyphen."
+  }
+]
