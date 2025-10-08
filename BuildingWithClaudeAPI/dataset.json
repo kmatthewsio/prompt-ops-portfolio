@@ -1,0 +1,18 @@
+[
+  {
+    "prompt_inputs": {
+      "height": "175",
+      "weight": "68",
+      "goal": "Optimize nutrition for 100-mile ultramarathon training",
+      "restrictions": "Vegan, soy-free, no processed sugars"
+    },
+    "solution_criteria": [
+      "Provides 3500-4000 daily calories from plant-based sources",
+      "Includes minimum 90g protein from diverse plant proteins",
+      "Balances macronutrients for endurance performance",
+      "Meets vegan dietary restrictions specified"
+    ],
+    "task_description": "Write a compact, concise 1 day meal plan for a single athlete",
+    "scenario": "Test generating a meal plan for a vegan ultramarathon runner with specific dietary restrictions and high-calorie nutritional needs, emphasizing plant-based protein sources and endurance-optimized meal composition"
+  }
+]
